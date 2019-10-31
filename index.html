@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-    <link rel="shortcut icon" href="img/favicon_nucamp.ico" type="image/x-icon">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="shortcut icon" href="img/favicon_nucamp.ico" type="image/x-icon">
+
     <title>NuCamp: A Better Way To Camp</title>
 </head>
 
@@ -29,7 +32,8 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col mt-4">
-                    <a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-info btn-lg">Reserve Form</a>
+                    <a role="button" data-toggle="modal" data-target="#reserveModal" class="btn btn-info btn-lg">Reserve
+                        Form</a>
                 </div>
             </div>
         </div>
@@ -73,11 +77,13 @@
                                     <label class="col-sm-6 col-form-label" for="siteType">Campsite Type</label>
                                     <div class="col btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-secondary active bg-success">
-                                            <input type="radio" name="siteType" id="siteTent" value="tent" autocomplete="off" checked>
+                                            <input type="radio" name="siteType" id="siteTent" value="tent"
+                                                autocomplete="off" checked>
                                             Active
                                         </label>
                                         <label class="btn btn-secondary bg-primary">
-                                            <input type="radio" name="siteType" id="siteRV" value="RV" autocomplete="off"> Radio
+                                            <input type="radio" name="siteType" id="siteRV" value="RV"
+                                                autocomplete="off"> Radio
                                         </label>
                                     </div>
                                 </div>
@@ -210,63 +216,67 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <button class="btn btn-danger btn-sm" id="carouselButton">
+                        <i class="fa fa-pause"></i>
+                    </button>
                 </div>
             </div>
         </div>
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 order-sm-last">
-                <h2 class="text-sm-right">Discover & Review</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="img-thumbnail mr-3 d-flex" src="img/breadcrumb-trail-thumb.jpg"
-                        alt="breadcrumb-trail-thumb" />
-                    <div class="media-body">
-                        <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
-                            own
-                            reviews!</p>
-                    </div>
+    </div>
+    <div class="row row-content align-items-center">
+        <div class="col-sm-4 col-md-3 order-sm-last">
+            <h2 class="text-sm-right">Discover & Review</h2>
+        </div>
+        <div class="col">
+            <div class="media">
+                <img class="img-thumbnail mr-3 d-flex" src="img/breadcrumb-trail-thumb.jpg"
+                    alt="breadcrumb-trail-thumb" />
+                <div class="media-body">
+                    <h3>Our Campsites</h3>
+                    <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your
+                        own
+                        reviews!</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h2>Featured Campsites</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img src="img/react-lake-thumb.jpg" alt="react-lake-thumb"
-                        class="img-thumbnail ml-3 order-sm-last d-flex">
-                    <div class="media-body">
-                        <h3>React Lake Campground</h3>
-                        <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
-                            on the
-                            shores of the pristine React
-                            Lake is
-                            a favorite for fly fishers.</p>
-                    </div>
+    <div class="row row-content align-items-center">
+        <div class="col-sm-4 col-md-3">
+            <h2>Featured Campsites</h2>
+        </div>
+        <div class="col">
+            <div class="media">
+                <img src="img/react-lake-thumb.jpg" alt="react-lake-thumb"
+                    class="img-thumbnail ml-3 order-sm-last d-flex">
+                <div class="media-body">
+                    <h3>React Lake Campground</h3>
+                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground
+                        on the
+                        shores of the pristine React
+                        Lake is
+                        a favorite for fly fishers.</p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 order-sm-last">
-                <h2 class="text-sm-right">Our Community Partners</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img src="img/bootstrap-thumb.png" alt="bootstrap-thumb" class="img-thumbnail mr-3 d-flex" />
-                    <div class="media-body align-items-center">
-                        <h3>Bootstrap Outfitters</h3>
-                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you
-                            can't
-                            beat.</p>
-                    </div>
+    <div class="row row-content align-items-center">
+        <div class="col-sm-4 col-md-3 order-sm-last">
+            <h2 class="text-sm-right">Our Community Partners</h2>
+        </div>
+        <div class="col">
+            <div class="media">
+                <img src="img/bootstrap-thumb.png" alt="bootstrap-thumb" class="img-thumbnail mr-3 d-flex" />
+                <div class="media-body align-items-center">
+                    <h3>Bootstrap Outfitters</h3>
+                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you
+                        can't
+                        beat.</p>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <footer class="site-footer">
@@ -304,9 +314,13 @@
         </div>
     </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
 </body>
 
 </html>
